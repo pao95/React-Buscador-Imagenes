@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import Error from './Error';
 
-const Formulario = () => {
+const Formulario = ({guardarBusqueda, guardarPaginaActual}) => {
 
     const [termino, guardarTermino] = useState("");
     const [error, guardarError] = useState(false);
@@ -18,6 +18,8 @@ const Formulario = () => {
         }
         guardarError(false)
         //enviar termino
+        guardarBusqueda(termino)
+        guardarPaginaActual(1)
     }
 
 
@@ -33,7 +35,7 @@ const Formulario = () => {
                         ></input>
                     </div>
                     <div className="form-group col-md-4">
-                    <button type="submit" className="btn btn-danger btn-block">Buscar</button>
+                    <button type="submit" className="btn btn-danger btn-block ">Buscar</button>
                     </div>
             </div>
         </form>

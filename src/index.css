@@ -5,9 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card{
+  background-color: #000;
+}
+
+.jumbotron{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
